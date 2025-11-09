@@ -7,6 +7,17 @@ This project is a static prototype of a Chess.com-inspired landing page. It is b
 - `styles.css` – styling for the layout, chess board visuals, and responsive design.
 - `script.js` – renders the chess board, populates the AI PvP roster, and updates the footer year.
 
+## GitHub Steps (Explained Like You’re 5)
+1. **Go to the page.** Open your web browser, type `github.com`, and press Enter.
+2. **Find this project.** Search for the Chessy project or open the link someone gave you.
+3. **Look for the big green “Code” button.** Click it.
+4. **Pick how to get the files.**
+   - Easiest: click **Download ZIP**. Your computer will save a copy of the project.
+   - If you use VS Code, you can click **Open with GitHub Desktop** and follow the little helper boxes.
+5. **Open the folder.** After the ZIP finishes downloading, double-click it and drag the inside folder somewhere easy, like your Desktop.
+6. **Open `index.html`.** Double-click it to see the chess site in your browser.
+7. **Change things if you want.** Right-click any file and open it in a text editor (Notepad, VS Code, etc.). When you press Save, the browser will show your changes the next time you refresh.
+
 ## How to Test
 Because the site is a static build, you only need a modern web browser to preview it. You can open the `index.html` file directly or serve the folder with a lightweight HTTP server.
 
