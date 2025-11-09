@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chessy - Play Chess Online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Chessy</div>
+    <nav class="nav-tabs" aria-label="Primary navigation">
+      <a class="nav-tab" href="#home">Home</a>
+      <a class="nav-tab" href="#play">Play</a>
+      <a class="nav-tab" href="#ai">AI PvP</a>
+      <a class="nav-tab" href="#puzzles">Puzzles</a>
+      <a class="nav-tab" href="#achievements">Achievements</a>
+      <a class="nav-tab" href="#stats">Stats</a>
+      <a class="nav-tab" href="#profile">Profile</a>
+    </nav>
+    <button class="cta" type="button">Sign In</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Chessy</h1>
+        <p>Challenge friends, sharpen your tactics, and climb the leaderboard in the cleanest chess experience online.</p>
+        <div class="hero-actions">
+          <button class="primary" type="button">Start a Game</button>
+          <button class="secondary" type="button">Learn More</button>
+        </div>
+      </div>
+      <div class="hero-board" aria-label="Chess board preview">
+        <div id="board" class="board" role="group" aria-labelledby="board-label"></div>
+        <div id="board-label" class="visually-hidden">Interactive chess board showing default white orientation.</div>
+      </div>
+    </section>
+
+    <section id="play" class="panel">
+      <h2>Play Your Way</h2>
+      <p>Pick a time control, invite a friend, or let us find a match at your skill level. White pieces are your default perspective.</p>
+      <div class="play-grid">
+        <article class="card">
+          <h3>Live Matches</h3>
+          <p>Instantly match with players across the globe. Adaptive matchmaking keeps the competition fair.</p>
+        </article>
+        <article class="card">
+          <h3>Daily Chess</h3>
+          <p>Prefer a slower pace? Take up to 24 hours per move and analyze every possibility.</p>
+        </article>
+        <article class="card">
+          <h3>Tournaments</h3>
+          <p>Compete in arena and Swiss tournaments for exclusive rewards and community glory.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ai" class="panel">
+      <h2>AI PvP</h2>
+      <p>Select the perfect sparring partner. Every AI opponent is tuned to a classic Elo rating and unique playing style.</p>
+      <div class="ai-grid" role="list"></div>
+    </section>
+
+    <section id="puzzles" class="panel">
+      <h2>Puzzles</h2>
+      <p>Sharpen your tactical skills with curated puzzles that adapt to your rating.</p>
+      <div class="puzzle-showcase">
+        <div class="puzzle-card">
+          <h3>Daily Challenge</h3>
+          <p>A single tough nut to crack each day—can you find the mate?</p>
+        </div>
+        <div class="puzzle-card">
+          <h3>Pattern Drills</h3>
+          <p>Memorize forks, pins, and skewers with themed sets.</p>
+        </div>
+        <div class="puzzle-card">
+          <h3>Speed Tactics</h3>
+          <p>Race the clock to solve as many puzzles as possible in three minutes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="panel">
+      <h2>Achievements</h2>
+      <p>Earn badges for every milestone—from your first checkmate to a hundred-game win streak.</p>
+      <ul class="achievements-list">
+        <li>
+          <span class="badge">♔</span>
+          <div>
+            <h3>First Victory</h3>
+            <p>Win your first rated game to unlock this classic badge.</p>
+          </div>
+        </li>
+        <li>
+          <span class="badge">⚡</span>
+          <div>
+            <h3>Blitz Specialist</h3>
+            <p>Play 50 blitz games to prove your tactical speed.</p>
+          </div>
+        </li>
+        <li>
+          <span class="badge">🧠</span>
+          <div>
+            <h3>Puzzle Pro</h3>
+            <p>Solve 200 puzzles and keep your calculation sharp.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="stats" class="panel">
+      <h2>Stats</h2>
+      <p>Track your progress across formats with interactive charts and personalized insights.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Rating Progress</h3>
+          <p class="stat-value">1420</p>
+          <p class="stat-label">Current rapid rating</p>
+        </div>
+        <div class="stat-card">
+          <h3>Win Rate</h3>
+          <p class="stat-value">61%</p>
+          <p class="stat-label">Wins in the last 30 games</p>
+        </div>
+        <div class="stat-card">
+          <h3>Puzzle Rush PB</h3>
+          <p class="stat-value">37</p>
+          <p class="stat-label">Best streak in 5-minute rush</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="panel profile">
+      <h2>Your Profile</h2>
+      <div class="profile-card">
+        <div class="profile-header">
+          <img src="https://avatars.dicebear.com/api/identicon/chessy.svg" alt="Player avatar" class="profile-avatar">
+          <div>
+            <h3>ChessFanatic</h3>
+            <p>Joined 2024 • Rapid 1420 • Blitz 1360 • Bullet 1500</p>
+          </div>
+        </div>
+        <div class="profile-body">
+          <p>"Every move is a brushstroke on the canvas of strategy." Keep climbing the ladder and refining your tactics.</p>
+          <button class="secondary" type="button">Edit Profile</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Chessy. Inspired by the classics, built for the next generation.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
