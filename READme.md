@@ -14,9 +14,11 @@ This project is a static prototype of a Chess.com-inspired landing page. It is b
 4. **Pick how to get the files.**
    - Easiest: click **Download ZIP**. Your computer will save a copy of the project.
    - If you use VS Code, you can click **Open with GitHub Desktop** and follow the little helper boxes.
-5. **Open the folder.** After the ZIP finishes downloading, double-click it and drag the inside folder somewhere easy, like your Desktop.
-6. **Open `index.html`.** Double-click it to see the chess site in your browser.
+5. **Open the folder.** After the ZIP finishes downloading, double-click it and drag the inside folder somewhere easy, like your Desktop. Make sure you unzip it before opening the files.
+6. **Launch the site.** Double-click the new `open-site.bat` helper or the `index.html` file to open the chess page in your browser.
 7. **Change things if you want.** Right-click any file and open it in a text editor (Notepad, VS Code, etc.). When you press Save, the browser will show your changes the next time you refresh.
+
+> **Tip:** If GitHub only shows you the README page online, that’s normal. You need to download the files (steps 4–6) to see the full website.
 
 ## How to Test
 Because the site is a static build, you only need a modern web browser to preview it. You can open the `index.html` file directly or serve the folder with a lightweight HTTP server.
